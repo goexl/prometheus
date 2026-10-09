@@ -1,7 +1,7 @@
-package promethy
+package prometheus
 
 import (
-	"github.com/goexl/promethy/internal/core"
+	"github.com/goexl/prometheus/internal/core"
 )
 
 // Registry 注册表

@@ -1,7 +1,7 @@
-package promethy
+package prometheus
 
 import (
-	"github.com/goexl/promethy/internal/core"
+	"github.com/goexl/prometheus/internal/core"
 )
 
 // Promethy 普罗米修斯

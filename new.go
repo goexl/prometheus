@@ -1,9 +1,9 @@
-package promethy
+package prometheus
 
 import (
 	"sync"
 
-	"github.com/goexl/promethy/internal/builder"
+	"github.com/goexl/prometheus/internal/builder"
 )
 
 var once sync.Once

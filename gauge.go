@@ -1,4 +1,4 @@
-package promethy
+package prometheus
 
 type Gauge interface {
 	Counter

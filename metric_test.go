@@ -1,11 +1,11 @@
-package promethy_test
+package prometheus_test
 
 import (
 	"testing"
 
-	"github.com/goexl/promethy"
+	"github.com/goexl/prometheus"
 )
 
 func TestMetric(t *testing.T) {
-	promethy.Metric()
+	prometheus.Metric()
 }

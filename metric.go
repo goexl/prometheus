@@ -1,7 +1,7 @@
-package promethy
+package prometheus
 
 import (
-	"github.com/goexl/promethy/internal/builder"
+	"github.com/goexl/prometheus/internal/builder"
 )
 
 func Metric() *builder.Metric {

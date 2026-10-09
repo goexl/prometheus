@@ -3,7 +3,7 @@ package core
 import (
 	"net/http"
 
-	"github.com/goexl/promethy/internal/param"
+	"github.com/goexl/prometheus/internal/param"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

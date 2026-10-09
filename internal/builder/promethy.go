@@ -2,8 +2,8 @@ package builder
 
 import (
 	"github.com/goexl/log"
-	"github.com/goexl/promethy/internal/core"
-	"github.com/goexl/promethy/internal/param"
+	"github.com/goexl/prometheus/internal/core"
+	"github.com/goexl/prometheus/internal/param"
 	"github.com/goexl/valuer"
 )
 

@@ -1,7 +1,7 @@
 package core
 
 import (
-	"github.com/goexl/promethy/internal/param"
+	"github.com/goexl/prometheus/internal/param"
 )
 
 type Promethy struct {
