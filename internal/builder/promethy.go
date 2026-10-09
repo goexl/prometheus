@@ -7,38 +7,38 @@ import (
 	"github.com/goexl/valuer"
 )
 
-type Promethy struct {
+type Prometheus struct {
 	params *param.Promethy
 }
 
-func NewPromethy() *Promethy {
-	return &Promethy{
+func NewPromethy() *Prometheus {
+	return &Prometheus{
 		params: param.NewParams(),
 	}
 }
 
-func (p *Promethy) Logger(logger log.Logger) (builder *Promethy) {
+func (p *Prometheus) Logger(logger log.Logger) (builder *Prometheus) {
 	p.params.Logger = logger
 	builder = p
 
 	return
 }
 
-func (p *Promethy) Parser(parser *valuer.Parser) (builder *Promethy) {
+func (p *Prometheus) Parser(parser *valuer.Parser) (builder *Prometheus) {
 	p.params.Parser = parser
 	builder = p
 
 	return
 }
 
-func (p *Promethy) Label(key string, value string) (builder *Promethy) {
+func (p *Prometheus) Label(key string, value string) (builder *Prometheus) {
 	p.params.Labels[key] = value
 	builder = p
 
 	return
 }
 
-func (p *Promethy) Labels(labels map[string]string) (builder *Promethy) {
+func (p *Prometheus) Labels(labels map[string]string) (builder *Prometheus) {
 	for key, value := range labels {
 		p.params.Labels[key] = value
 	}
@@ -47,6 +47,6 @@ func (p *Promethy) Labels(labels map[string]string) (builder *Promethy) {
 	return
 }
 
-func (p *Promethy) Build() *core.Promethy {
+func (p *Prometheus) Build() *core.Promethy {
 	return core.NewPromethy(p.params)
 }
